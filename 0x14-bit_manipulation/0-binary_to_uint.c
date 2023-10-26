@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * binary_to_uint - binary can be converted through unsigned int
@@ -8,16 +9,16 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-        int i;
-        unsigned int dev_val = 0;
+        int alx;
+        unsigned int abraham = 0;
 
         if (!b)
                 return (0);
-        for (j = 0; b[j]; j++)
+        for (alx = 0; b[alx]; alx++)
         {
-                if (b[j] < '0' || b[j] > '1')
+                if (b[alx] < '0' || b[alx] > '1')
                         return (0);
-		dec_val = 2 * dec_val + (b[j] - '0');
+                abraham = 2 * abraham + (b[alx] - '0');
         }
-        return (dec_val);
+        return (abraham);
 }
